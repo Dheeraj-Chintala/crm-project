@@ -2,11 +2,15 @@
 
 A comprehensive CRM (Customer Relationship Management) application built with React, TypeScript, Vite, and Supabase.
 
+## Test Mails
 
-## Prerequisites
+```bash
+admin-> sanji@test.com
+manager-> luffy@test.com
+user-> ussop@test.com
 
-- Node.js (v18 or higher recommended)
-- npm or yarn
+passwords: password
+```
 
 ## SetUp Instructions
 
@@ -37,4 +41,5 @@ The application will start on **port 8080**.
 
 Open your browser and navigate to:
 [http://localhost:8080](http://localhost:8080)
+
 
