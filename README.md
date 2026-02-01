@@ -2,38 +2,19 @@
 
 A comprehensive CRM (Customer Relationship Management) application built with React, TypeScript, Vite, and Supabase.
 
-## Features
-
-- **Lead Management**: Track and manage leads through various statuses.
-- **Contact Management**: Store and organize contact information.
-- **Deal Tracking**: Manage deals, pipelines, and stages with visual boards.
-- **Task Management**: Create and assign tasks, track due dates, and view overdue items.
-- **Reports & Analytics**: Visual insights into lead conversion, deal pipelines, and activity trends.
-- **Role-Based Access Control (RBAC)**: Secure access for Admins, Managers, and standard Users.
-- **Audit Logging**: Track important system actions and changes.
-
-## Tech Stack
-
-- **Frontend**: React, TypeScript, Vite
-- **UI Framework**: Tailwind CSS, shadcn/ui
-- **Icons**: Lucide React
-- **Charts**: Recharts
-- **Backend/Database**: Supabase (PostgreSQL, Auth, Realtime)
-- **State Management**: React Context, TanStack Query
 
 ## Prerequisites
 
 - Node.js (v18 or higher recommended)
 - npm or yarn
-- A Supabase project (for backend)
 
-## Getting Started
+## SetUp Instructions
 
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
-cd <project-directory>
+git clone https://github.com/Dheeraj-Chintala/crm-project.git
+cd crm-project
 ```
 
 ### 2. Install dependencies
@@ -42,15 +23,7 @@ cd <project-directory>
 npm install
 ```
 
-### 3. Environment Configuration
-
-```bash
-Not needed
-```
-
-
-
-### 4. Run the Application
+### 3. Run the Application
 
 Start the development server:
 
