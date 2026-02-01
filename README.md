@@ -49,11 +49,8 @@ Not needed
 ```
 
 
-### 4. Database Setup
 
-Ensure your Supabase project is set up with the required schema. You can find migration files in the `supabase/migrations` directory.
-
-### 5. Run the Application
+### 4. Run the Application
 
 Start the development server:
 
