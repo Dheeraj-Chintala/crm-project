@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CRM Design System - Professional slate/navy tones with subtle warmth */
+
+@layer base {
+  :root {
+    /* Core palette - Slate/Navy professional look */
+    --background: 210 20% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Primary - Deep navy blue */
+    --primary: 222 47% 20%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Secondary - Soft slate */
+    --secondary: 214 32% 91%;
+    --secondary-foreground: 222 47% 11%;
+
+    /* Muted - Gentle gray */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Accent - Warm blue tint */
+    --accent: 214 100% 97%;
+    --accent-foreground: 222 47% 11%;
+
+    /* Status colors */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+
+    /* Borders & inputs */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 222 47% 20%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar - Darker professional sidebar */
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 210 40% 98%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 222 47% 16%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 222 47% 18%;
+    --sidebar-ring: 214 100% 60%;
+
+    /* CRM specific tokens */
+    --crm-gradient-start: 222 47% 11%;
+    --crm-gradient-end: 222 47% 20%;
+    --crm-highlight: 214 100% 60%;
+  }
+
+  .dark {
+    --background: 222 47% 7%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 222 47% 16%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 222 47% 16%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 222 47% 16%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+
+    --success: 142 71% 35%;
+    --success-foreground: 210 40% 98%;
+
+    --warning: 38 92% 40%;
+    --warning-foreground: 210 40% 98%;
+
+    --info: 199 89% 38%;
+    --info-foreground: 210 40% 98%;
+
+    --border: 222 47% 18%;
+    --input: 222 47% 18%;
+    --ring: 214 100% 60%;
+
+    --sidebar-background: 222 47% 5%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 214 100% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 47% 11%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 222 47% 14%;
+    --sidebar-ring: 214 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Typography scale */
+  h1 {
+    @apply text-3xl font-semibold tracking-tight;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold tracking-tight;
+  }
+
+  h3 {
+    @apply text-xl font-medium;
+  }
+
+  h4 {
+    @apply text-lg font-medium;
+  }
+}
+
+@layer components {
+  /* CRM card with subtle shadow */
+  .crm-card {
+    @apply bg-card rounded-lg border shadow-sm;
+  }
+
+  /* Stats card variant */
+  .crm-stat-card {
+    @apply bg-card rounded-lg border p-6 transition-all duration-200 hover:shadow-md;
+  }
+
+  /* Page header styling */
+  .crm-page-header {
+    @apply mb-8 flex items-center justify-between;
+  }
+
+  /* Sidebar active state */
+  .crm-sidebar-active {
+    @apply bg-sidebar-accent text-sidebar-accent-foreground;
+  }
+
+  /* Auth card styling */
+  .auth-card {
+    @apply bg-card rounded-xl border shadow-lg p-8;
+  }
+
+  /* Gradient text */
+  .crm-gradient-text {
+    @apply bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  /* Smooth page transitions */
+  .page-transition {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  /* Focus ring utility */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2;
+  }
+}
